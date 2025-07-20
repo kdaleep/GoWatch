@@ -1,0 +1,24 @@
+.text-color{
+    color: yellowgreen;
+}
+
+a{
+    text-decoration: none;
+}
+.btn-theme {
+    background-color: yellowgreen;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-theme:hover {
+    background-color: yellowgreen;
+    text-decoration: none;
+    color: black;
+}
+
+.center-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
