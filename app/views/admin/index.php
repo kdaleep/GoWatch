@@ -53,16 +53,16 @@ if (!isset($_SESSION['user_id']) || $_SESSION['is_admin'] != 1) {
             </div>
         </div>
 
-        <!-- Main Content -->
-        <?php if ($currentUrl === '/GoWatch/public/admin'): ?>
+        <?php if (strpos($currentUrl, '/admin') !== false && $currentUrl === '/GoWatch/public/admin'): ?>
             <?php include('../app/views/admin/dashboard.php'); ?>
 
-        <?php elseif ($currentUrl === '/GoWatch/public/admin/manage_anime'): ?>
+        <?php elseif (strpos($currentUrl, '/admin/manage_anime') !== false): ?>
             <?php include('../app/views/admin/manage_anime.php'); ?>
 
-        <?php elseif ($currentUrl === '/GoWatch/public/admin/manage_users'): ?>
+        <?php elseif (strpos($currentUrl, '/admin/manage_users') !== false): ?>
             <?php include('../app/views/admin/manage_users.php'); ?>
         <?php endif; ?>
+
 
     </div>
 </div>

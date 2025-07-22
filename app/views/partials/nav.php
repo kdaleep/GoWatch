@@ -12,9 +12,9 @@
                 </a>
             </div>
 
-            <form class="d-flex flex-grow-1 justify-content-center mx-3" role="search" style="max-width: 500px;">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-light bg-dark" type="submit">Search</button>
+            <form class="d-flex flex-grow-1 justify-content-center mx-3" role="search" style="max-width: 500px;" action="<?= URLROOT ?>/movie/search" method="GET">
+                <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-light" type="submit">Search</button>
             </form>
             <div>
 
@@ -27,7 +27,7 @@
                     <a href="<?= URLROOT ?>/auth/logout" class="btn btn-theme"><i class="fa-solid fa-right-from-bracket"></i></a>
                 </div>
             <?php else: ?>
-                <button class="btn btn-theme" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-theme" type="button" data-bs-toggle="modal"  data-bs-target="#loginModal">Login</button>
             <?php endif; ?>
         </div>
     </nav>

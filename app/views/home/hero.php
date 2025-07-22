@@ -1,4 +1,4 @@
-<section id="hero" class="mb-5">
+<section id="hero">
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php foreach ($data['trending'] as $index => $movie): ?>
@@ -12,7 +12,7 @@
                                 <h1 class="h5 text-color">#<?= htmlspecialchars(++$index) ?> Spotlight</h1>
                                 <h1 class="h3"><?= htmlspecialchars($movie['title']) ?></h1>
                                 <p class="small"><?= htmlspecialchars($movie['description']) ?></p>
-                                <a href="<?= URLROOT ?>/movie/detail/<?= $movie['id'] ?>" class="btn btn-theme rounded-pill mt-2">
+                                <a href="<?= URLROOT ?>/movie/watch?id=<?= $movie['id'] ?>" class="btn btn-theme rounded-pill mt-2">
                                     <i class="fa-solid fa-circle-play"></i> Watch Now
                                 </a>
                                 <a href="<?= URLROOT ?>/movie/detail/<?= $movie['id'] ?>" class="btn btn-outline-light rounded-pill ms-2 mt-2">
