@@ -34,7 +34,7 @@
                                 <td><?= htmlspecialchars($anime['title']) ?></td>
                                 <td><?= htmlspecialchars(mb_strimwidth($anime['description'], 0, 150, '...')) ?></td>
                                 <td>
-                                    <button class="btn btn-success"
+                                    <button class="btn btn-success viewBtn"
                                         data-id="<?= $anime['id'] ?>"
                                         data-title="<?= htmlspecialchars($anime['title']) ?>"
                                         data-bs-toggle="modal"
